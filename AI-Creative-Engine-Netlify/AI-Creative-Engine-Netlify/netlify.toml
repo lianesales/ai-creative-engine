@@ -1,0 +1,21 @@
+[build]
+  publish = "public"
+  functions = "netlify/functions"
+
+[functions]
+  node_bundler = "esbuild"
+
+[[headers]]
+  for = "/api/*"
+  [headers.values]
+    Cache-Control = "no-store"
+
+[[redirects]]
+  from = "/api/ai-script"
+  to = "/.netlify/functions/ai-script"
+  status = 200
+
+[[redirects]]
+  from = "/api/apify-trending"
+  to = "/.netlify/functions/apify-trending"
+  status = 200
