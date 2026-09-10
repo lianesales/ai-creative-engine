@@ -24,3 +24,4 @@ OPENAI_API_KEY=
 CODEKRAFT_API_KEY=
 APIFY_API_TOKEN=
 APIFY_ACTOR_ID=
+Deploy corrigido pelo Netlify
